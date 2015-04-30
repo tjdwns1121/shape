@@ -1,6 +1,6 @@
 package shape;
 
-public class Point {
+public class Point implements Drawble{
 	private int x;
 	private int y;
 
@@ -30,16 +30,22 @@ public class Point {
 		this.y = y;
 	}
 
-	public void show(boolean visible) {
-		if (visible == true)
-			show();
-		else
-			System.out.println("좌표 [x = " + x + ", y = " + y + "]에 점을 지웠습니다.");
-		
-	}
+//	public void show(boolean visible) {
+//		if (visible == true)
+//			show();
+//		else
+//			System.out.println("좌표 [x = " + x + ", y = " + y + "]에 점을 지웠습니다.");
+//		
+//	}
+//
+//	public void show() {
+//		System.out.println("좌표 [x = " + x + ", y = " + y + "]에 점을 그렸습니다.");
+//	}
 
-	public void show() {
+	@Override
+	public void draw() {
 		System.out.println("좌표 [x = " + x + ", y = " + y + "]에 점을 그렸습니다.");
+		
 	}
 
 }

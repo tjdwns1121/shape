@@ -32,7 +32,24 @@ public class ShapeTest {
 //		rect.draw();
 //		circle.draw();
 
-		ColorPoint point5 = new ColorPoint(10,50,"red");
-		point5.show();
+//		ColorPoint point5 = new ColorPoint(10,50,"red");
+//		point5.show();
+		
+//		Drawble drawble = new Point(10,20);
+//		drawble.draw();
+		
+		// instanceof 테스트
+		Circle c = new Circle();
+		
+		System.out.println(c instanceof Circle);
+		System.out.println(c instanceof Shape);
+		System.out.println(c instanceof Drawble);
+//		System.out.println(c instanceof Rect);
+		System.out.println(c instanceof Visible);
+		
+		Shape s = c;
+		System.out.println(s instanceof Rect);
+		
+		
 	}
 }
