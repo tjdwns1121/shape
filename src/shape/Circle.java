@@ -2,14 +2,14 @@ package shape;
 
 public class Circle extends Shape implements Drawble {
 	
-	private int r;
+	private int radius;
 	
 	public int getR() {
-		return r;
+		return radius;
 	}
 
 	public void setR(int r) {
-		this.r = r;
+		this.radius = radius;
 	}
 
 	public void draw() {
@@ -18,6 +18,6 @@ public class Circle extends Shape implements Drawble {
 
 	@Override
 	public double calculateArea() {
-		return (double)r*r*Math.PI;
+		return (double)radius*radius*Math.PI;
 	}
 }
